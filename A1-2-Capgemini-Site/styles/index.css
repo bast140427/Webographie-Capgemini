@@ -1,0 +1,414 @@
+body {
+    background-color: #272a30;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Main */
+
+#nature {
+    position: relative;
+}
+
+#nature img {
+    max-width : 100%;
+    width: 100%;
+    height: auto;
+}
+
+#nature h1 {
+    font-size: 5vmax;
+    position: absolute;
+    color: ghostwhite;
+    margin-top: 0;
+    top :45%;
+    left: 37%;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1.5px 1.5px 1.5px black;
+}
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#container {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#container .theme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#container article {
+    padding: 2%;
+    height: fit-content;
+    position: relative;
+}
+
+#container img {
+    width: 500px;
+    box-shadow: 5px 5px 5px black;
+    filter: blur(1px);
+}
+
+#container h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#container a {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 150px;
+    left: 180px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.1s ease-out;
+}
+
+/* Animation */
+
+#container a:hover {
+    scale: 1.1;
+    box-shadow: 3px 3px 3px black;
+    transition: 0.1s ease-out;
+}
+
+/* Partie Matthew */
+
+html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+#headerVisible{
+    display: flex;
+    background-color: rgba(0,0,0,0.92);
+    align-items: center;
+}
+
+#navCategorie {
+    flex: 1 1 0;
+}
+
+#navCategorie ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+#navCategorieCache {
+    background-color: black;
+}
+
+#navCategorieCache ul {
+    display: flex;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+#navCategorieCache a {
+    padding: 0.5em;
+}
+
+.listeCategorie {
+    text-align: center;
+}
+
+#logo {
+    margin-left: 5%;
+    margin-right: 4%;
+}
+
+#lienLogo {
+    padding: 1em 0.5em;
+    display: block;
+    height: 23px;
+}
+
+#lienlogo img{
+    max-width: 100%;
+    height: auto;
+}
+
+#logoCapgemini {
+    max-width: 100%;
+}
+
+.lienCategorie {
+    display: block;
+    color: rgb(219, 231, 233);
+    text-decoration: none;
+}
+
+#searchbar {
+    margin-left: 3%;
+    margin-right: 7%;
+}
+
+#searchbar input {
+    border: 1px;
+    width: 75%;
+    background-color: rgb(245, 245, 247);   
+}
+
+#searchbar button {
+    border: 1px;
+    border-radius: 2px;
+    background-color: #c2c0cc;
+}
+footer {
+    background-color: #303030d7;
+    color: #e7e7f2;/* ou #1d1d1f;*/
+	position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.7em 0;
+    font-size: 20px;
+}
+
+#footerContactCapgemini {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footerLogoReseauxSociaux {
+    display: flex;
+    justify-content: end;
+    margin-right: 7%;
+    flex: 0.8 1 0;
+}
+
+#footerLogoReseauxSociaux a {
+    display: block;
+    width: 50px;
+    height: 38.5px;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-right: -2px;
+}
+
+#footerLogoReseauxSociaux img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+/* Animation */
+
+header a:hover {
+    filter: brightness(100);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img:hover {
+    scale: 1.1;
+}
+
+@media screen and (max-width: 500px){
+    #navCategorieCache ul {
+        font-size: 14px;
+    }
+    
+    #navCategorie{
+        display:none;
+    }
+    #lienLogo {
+        padding: 0.45em 0.25em;
+    }
+
+    #logoCapgemini {
+        max-height: 100%;
+        margin-top: 3px;
+    }
+    #searchbar {
+        margin-top: 2px;
+        margin-left: auto;
+        width: 120px;
+    }
+    #searchbar input {
+        height: 15px;
+        font-size: 11px; 
+        width: 100%;
+    }
+    
+    #searchbar button {
+        display: none;
+    }
+
+    footer {
+        display: block;
+    }
+
+    #footerContactCapgemini {
+        justify-content: space-around;
+    }
+
+    #footerLogoReseauxSociaux {
+        justify-content: center;
+        margin: 0;
+    }
+
+    #footerLogoReseauxSociaux a {
+        width: 29px;
+        height: 29px;
+        margin-right: 7px;
+    }
+
+    #footerContact {
+        flex: 1 1 0;
+    }
+
+    #footerLienSiteCapgemini {
+        flex: 1 1 0;
+    }
+    #titreContenu {
+        font-size: 22px;
+    }
+    #blkContenu h3 {
+        display: none;
+    }
+    #blkContenu .contenu:first-child {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 720px) {
+    #navCategorie{
+      display:none;
+    }
+    #lienLogo {
+        padding: 0.6em 0.3em;
+    }
+    #logoCapgemini {
+        max-height: 100%;
+        margin-top: 3px;
+    }
+    #searchbar {
+        margin-top: 2px;
+        margin-left: auto;
+        width: 150px;
+    }
+    #searchbar input {
+        height: 17px;
+        font-size: 12px; 
+        width: 100%;
+    }
+    
+    #searchbar button {
+        display: none;
+    }
+
+    footer {
+        display: block;
+    }
+
+    #footerContactCapgemini {
+        justify-content: space-around;
+    }
+
+    #footerLogoReseauxSociaux {
+        justify-content: center;
+        margin: 0;
+    }
+
+    #footerLogoReseauxSociaux a {
+        width: 32px;
+        height: 32px;
+        margin-right: 7px;
+    }
+
+    #footerContact {
+        flex: 1 1 0;
+    }
+
+    #footerLienSiteCapgemini {
+        flex: 1 1 0;
+    }
+
+    #titreContenu {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1020px) {
+    #navCategorie{
+      display:none;
+    }
+    #lienLogo {
+        padding: 0.6em 0.3em;
+    }
+    #logoCapgemini {
+        max-height: 100%;
+        margin-top: 3px;
+    }
+    #searchbar {
+        margin-top: 2px;
+        margin-left: auto;
+        width: 150px;
+    }
+    #searchbar input {
+        height: 17px;
+        font-size: 12px; 
+        width: 100%;
+    }
+    
+    #searchbar button {
+        display: none;
+    }
+
+    #titreContenu {
+        font-size: 28px;
+    }
+    #footerLogoReseauxSociaux a {
+        width: 36.5px;
+        height: 36.5px;
+        margin-right: 7px;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    #navCategorieCache{
+      display:none;
+    }
+}
+
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img:hover {
+    scale: 1.1;
+}
+
+footer a:visited {
+    color: white;
+}

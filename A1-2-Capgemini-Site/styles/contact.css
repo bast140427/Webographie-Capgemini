@@ -1,0 +1,384 @@
+html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    background-image: url("../img/image2.png");
+}
+
+#headerVisible{
+    display: flex;
+    background-color: rgba(0,0,0,0.92);
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#navCategorie {
+    flex: 1 1 0;
+}
+
+#navCategorie ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+#navCategorieCache {
+    background-color: black;
+}
+
+#navCategorieCache ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+#navCategorieCache a {
+    padding: 0.5em;
+}
+
+.listeCategorie {
+    text-align: center;
+}
+
+#logo {
+    margin-left: 5%;
+    margin-right: 4%;
+}
+
+#lienLogo {
+    padding: 1em 0.5em;
+    display: block;
+    height: 23px;
+}
+
+#lienlogo img{
+    max-width: 100%;
+    height: auto;
+}
+
+#logoCapgemini {
+    max-width: 100%;
+}
+
+.lienCategorie {
+    display: block;
+    color: rgb(245, 245, 247);
+    text-decoration: none;
+}
+
+#searchbar {
+    margin-left: 3%;
+    margin-right: 7%;
+}
+
+#searchbar input {
+    border: 1px;
+    width: 75%;
+    background-color: rgb(245, 245, 247);   
+}
+
+#searchbar button {
+    border: 1px;
+    border-radius: 2px;
+    background-color: #c2c0cc;
+}
+
+footer {
+    background-color: #303030d7;
+    color: #e7e7f2;/* ou #1d1d1f;*/
+	position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.7em 0;
+    font-size: 20px;
+}
+
+#footerContactCapgemini {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footerLogoReseauxSociaux {
+    display: flex;
+    justify-content: end;
+    margin-right: 7%;
+    flex: 0.8 1 0;
+}
+
+#footerLogoReseauxSociaux a {
+    display: block;
+    width: 50px;
+    height: 38.5px;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-right: -2px;
+}
+
+
+#footerLogoReseauxSociaux img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+
+main {
+	font-family: Sitka Subheading;
+    margin-top: 5%;
+    border: 0;
+    border-radius: 10px;
+    background-color: #1D1D1F;
+    opacity: 0.83;
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+#formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+label {
+    display: block;
+    font-family: Sitka Subheading;
+    font-size: 1.2em;
+} 
+  
+#formulaire input{
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 2.35em;
+}
+
+
+.blk {
+    margin-top: 5%;
+    width: 77%;
+}
+
+.blkButton {
+    margin-top: 5%;
+    width: 50%;
+    text-align: center;
+}
+
+.blkButton button {
+    border: 2px solid rgb(187, 189, 192);
+    background-color: black;
+	color: white;
+	border-radius: 10px;
+	margin-top: 4%;
+	margin-bottom: 10%;
+	width: 60%;
+	height: 4.3em;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.blk textarea {
+    resize: none;
+    height: 140px;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px){
+    #navCategorieCache ul {
+        font-size: 14px;
+    }
+    
+    #navCategorie{
+        display:none;
+    }
+    #lienLogo {
+        padding: 0.45em 0.25em;
+    }
+
+    #logoCapgemini {
+        max-height: 100%;
+        margin-top: 3px;
+    }
+    #searchbar {
+        margin-top: 2px;
+        margin-left: auto;
+        width: 120px;
+    }
+    #searchbar input {
+        height: 15px;
+        font-size: 11px; 
+        width: 100%;
+    }
+    
+    #searchbar button {
+        display: none;
+    }
+
+    footer {
+        display: block;
+    }
+
+    #footerContactCapgemini {
+        justify-content: space-around;
+    }
+
+    #footerLogoReseauxSociaux {
+        justify-content: center;
+        margin: 0;
+    }
+
+    #footerLogoReseauxSociaux a {
+        width: 29px;
+        height: 29px;
+        margin-right: 7px;
+    }
+
+    #footerContact {
+        flex: 1 1 0;
+    }
+
+    #footerLienSiteCapgemini {
+        flex: 1 1 0;
+    }
+    #titreContenu {
+        font-size: 24px;
+    }
+    #blkContenu h3 {
+        display: none;
+    }
+    #blkContenu .contenu:first-child {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 720px) {
+    #navCategorie{
+      display:none;
+    }
+    #lienLogo {
+        padding: 0.6em 0.3em;
+    }
+    #logoCapgemini {
+        max-height: 100%;
+        margin-top: 3px;
+    }
+    #searchbar {
+        margin-top: 2px;
+        margin-left: auto;
+        width: 150px;
+    }
+    #searchbar input {
+        height: 17px;
+        font-size: 12px; 
+        width: 100%;
+    }
+    
+    #searchbar button {
+        display: none;
+    }
+
+    footer {
+        display: block;
+    }
+
+    #footerContactCapgemini {
+        justify-content: space-around;
+    }
+
+    #footerLogoReseauxSociaux {
+        justify-content: center;
+        margin: 0;
+    }
+
+    #footerLogoReseauxSociaux a {
+        width: 32px;
+        height: 32px;
+        margin-right: 7px;
+    }
+
+    #footerContact {
+        flex: 1 1 0;
+    }
+
+    #footerLienSiteCapgemini {
+        flex: 1 1 0;
+    }
+
+    #titreContenu {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1020px) {
+    #navCategorie{
+      display:none;
+    }
+    #lienLogo {
+        padding: 0.6em 0.3em;
+    }
+    #logoCapgemini {
+        max-height: 100%;
+        margin-top: 3px;
+    }
+    #searchbar {
+        margin-top: 2px;
+        margin-left: auto;
+        width: 150px;
+    }
+    #searchbar input {
+        height: 17px;
+        font-size: 12px; 
+        width: 100%;
+    }
+    
+    #searchbar button {
+        display: none;
+    }
+
+    #titreContenu {
+        font-size: 28px;
+    }
+    #footerLogoReseauxSociaux a {
+        width: 36.5px;
+        height: 36.5px;
+        margin-right: 7px;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    #navCategorieCache{
+      display:none;
+    }
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img:hover {
+    scale: 1.1;
+}
+
+footer a:visited {
+    color: white;
+}
